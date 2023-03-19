@@ -1,0 +1,39 @@
+.rebotable > table > thead > tr > th .filter-label {
+  display: block !important;
+}
+
+.rebotable > table > thead > tr > th .filter {
+  font-weight: normal;
+}
+
+.rebotable > table > thead > tr > th .select-filter option[value=''],
+.rebotable > table > thead > tr > th .select-filter.placeholder-selected,
+.rebotable > table > thead > tr > th .filter::-webkit-input-placeholder,
+.rebotable > table > thead > tr > th .number-filter-input::-webkit-input-placeholder,
+.rebotable > table > thead > tr > th .date-filter-input::-webkit-input-placeholder {
+  color: lightgrey;
+  font-style: italic;
+}
+
+.rebotable > table > thead > tr > th .select-filter.placeholder-selected option:not([value='']) {
+  color: initial;
+  font-style: initial;
+}
+
+.rebotable > table > thead > tr > th .number-filter,
+.rebotable > table > thead > tr > th .date-filter {
+  display: flex;
+}
+
+.rebotable > table > thead > tr > th .number-filter-input,
+.rebotable > table > thead > tr > th .date-filter-input {
+  margin-left: 5px;
+  float: left;
+  width: calc(100% - 67px - 5px);
+}
+
+.rebotable > table > thead > tr > th .number-filter-comparator,
+.rebotable > table > thead > tr > th .date-filter-comparator {
+  width: 67px;
+  float: left;
+}

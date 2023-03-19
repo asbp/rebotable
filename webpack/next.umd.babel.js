@@ -4,8 +4,8 @@ import umdConfig from './webpack.umd.babel';
 module.exports = {
   ...umdConfig,
   entry: {
-    'react-bootstrap-table2/dist/react-bootstrap-table-next': './packages/react-bootstrap-table2/index.js',
-    'react-bootstrap-table2/dist/react-bootstrap-table-next.min': './packages/react-bootstrap-table2/index.js'
+    'rebotable/dist/rebotable': './packages/rebotable/index.js',
+    'rebotable/dist/rebotable.min': './packages/rebotable/index.js'
   },
   output: {
     path: path.join(__dirname, '../packages'),

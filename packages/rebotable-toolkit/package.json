@@ -1,0 +1,53 @@
+{
+  "name": "rebotable-toolkit",
+  "version": "2.2.1",
+  "description": "The toolkit for rebotable",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asbp/rebotable.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib/",
+    "dist/"
+  ],
+  "tags": [
+    "react"
+  ],
+  "author": "AllenFang",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "bootstrap",
+    "table",
+    "grid",
+    "react-bootstrap-table-addons",
+    "react-component"
+  ],
+  "contributors": [
+    {
+      "name": "Allen Fang",
+      "email": "ayu780129@hotmail.com",
+      "url": "https://github.com/AllenFang"
+    },
+    {
+      "name": "Chun-MingChen",
+      "email": "nick830314@gmail.com",
+      "url": "https://github.com/Chun-MingChen"
+    }
+  ],
+  "peerDependencies": {
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "dependencies": {
+    "file-saver": "2.0.5"
+  },
+  "devDependencies": {
+    "typescript": "5.0.2"
+  }
+}

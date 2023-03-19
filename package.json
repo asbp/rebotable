@@ -1,25 +1,26 @@
 {
-  "name": "react-bootstrap-table2",
+  "name": "rebotable",
   "version": "2.0.4",
   "private": true,
-  "description": "Rebuilt for react-bootstrap-table",
+  "description": "Rebuilt version of react-bootstrap-table",
   "main": "index.js",
   "scripts": {
     "postinstall": "lerna bootstrap",
     "build": "./node_modules/.bin/gulp prod",
     "lint": "eslint ./packages --ext .js --ext .jsx",
     "pretest": "yarn lint --cache",
+    "lernaupdate": "lernaupdate",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --coverage --watch",
-    "storybook": "cd ./packages/react-bootstrap-table2-example && yarn storybook",
-    "gh-pages:clean": "cd ./packages/react-bootstrap-table2-example && yarn gh-pages:clean",
-    "gh-pages:build": "cd ./packages/react-bootstrap-table2-example && yarn gh-pages:build",
+    "storybook": "cd ./packages/rebotable-example && yarn storybook",
+    "gh-pages:clean": "cd ./packages/rebotable-example && yarn gh-pages:clean",
+    "gh-pages:build": "cd ./packages/rebotable-example && yarn gh-pages:build",
     "release": "yarn install && yarn build && lerna publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BonnierNews/react-bootstrap-table2.git"
+    "url": "git+https://github.com/asbp/rebotable.git"
   },
   "author": "AllenFang",
   "contributors": [
@@ -36,12 +37,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BonnierNews/react-bootstrap-table2/issues"
+    "url": "https://github.com/asbp/rebotable/issues"
   },
   "engines": {
     "node": ">=16 <=18"
   },
-  "homepage": "https://github.com/BonnierNews/react-bootstrap-table2#readme",
+  "homepage": "https://github.com/asbp/rebotable#readme",
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.2",
@@ -91,6 +92,7 @@
     "jsdom": "^20.0.2",
     "jsdom-global": "^3.0.2",
     "lerna": "^6.3.0",
+    "lerna-update-wizard": "^1.1.2",
     "react-test-renderer": "^16.4.0",
     "sass-loader": "^13.2.0",
     "sinon": "^14.0.2",
@@ -114,7 +116,7 @@
     "collectCoverageFrom": [
       "packages/*/src/**/*.js",
       "packages/*/index.js",
-      "!packages/react-bootstrap-table2-example/**/*.js"
+      "!packages/rebotable-example/**/*.js"
     ],
     "roots": [
       "<rootDir>/packages"
@@ -123,7 +125,7 @@
       "<rootDir>/enzyme-setup.js"
     ],
     "modulePaths": [
-      "<rootDir>/packages/react-bootstrap-table2"
+      "<rootDir>/packages/rebotable"
     ],
     "testEnvironment": "node",
     "testMatch": [

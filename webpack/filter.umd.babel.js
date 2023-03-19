@@ -4,8 +4,8 @@ import umdConfig from './webpack.umd.babel';
 module.exports = {
   ...umdConfig,
   entry: {
-    'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter': './packages/react-bootstrap-table2-filter/index.js',
-    'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min': './packages/react-bootstrap-table2-filter/index.js'
+    'rebotable-filter/dist/rebotable-filter': './packages/rebotable-filter/index.js',
+    'rebotable-filter/dist/rebotable-filter.min': './packages/rebotable-filter/index.js'
   },
   output: {
     path: path.join(__dirname, '../packages'),

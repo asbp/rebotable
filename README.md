@@ -1,30 +1,12 @@
-## BN fork
+## REBOTABLE (react-bootstrap-table2 fork)
 
 ![Build Status](https://github.com/asbp/react-bootstrap-table2/actions/workflows/node.js.yml/badge.svg)
 
-This is a fork of Allen Fangs [react-bootstrap-table2](https://github.com/react-bootstrap-table/react-bootstrap-table2) repo, which is the repo for [react-bootstrap-table-next](https://www.npmjs.com/package/react-bootstrap-table-next) on npm.
+This is a fork of Allen Fangs [react-bootstrap-table2](https://github.com/react-bootstrap-table/react-bootstrap-table2) repo, which is the repo for [react-bootstrap-table-next](https://www.npmjs.com/package/react-bootstrap-table-next) on npm. 
 
-That repo seems to have been abandoned, so this fork was created simply to keep packages up to date with security fixes.
+The AllenFang's version are seemingly in inactive development (at least for the time being), so I created the fork here, based on [BonnierNews' fork](https://github.com/BonnierNews/react-bootstrap-table2). I will update it -- and gradually migrating it into TypeScript in the future.
 
-Specific packages from this repo can be used via [gitpkg.now.sh](https://gitpkg.now.sh/):
-e.g (packages from tag v1.0.0 in this repo):
-
-`yarn add https://gitpkg.now.sh/BonnierNews/react-bootstrap-table2/packages/react-bootstrap-table2?v1.0.0`
-
-`yarn add https://gitpkg.now.sh/BonnierNews/react-bootstrap-table2/packages/react-bootstrap-table2-editor?v1.0.0`
-
-`yarn add https://gitpkg.now.sh/BonnierNews/react-bootstrap-table2/packages/react-bootstrap-table2-filter?v1.0.0`
-
-
-Or by adding directly to package.json. 
-e.g (packages from tag v1.0.0 in this repo)
-```
-    "react-bootstrap-table-next": "https://gitpkg.now.sh/BonnierNews/react-bootstrap-table2/packages/react-bootstrap-table2?v1.0.0",
-    "react-bootstrap-table2-editor": "https://gitpkg.now.sh/BonnierNews/react-bootstrap-table2/packages/react-bootstrap-table2-editor?v1.0.0",
-    "react-bootstrap-table2-filter": "https://gitpkg.now.sh/BonnierNews/react-bootstrap-table2/packages/react-bootstrap-table2-filter?v1.0.0",
-```
-
-# release new version of BN Fork
+# How to build?
 - locally (in new branch, after making changes, and bumping version string in root package.json):
 ```bash  
 yarn test
@@ -33,9 +15,6 @@ git add .
 git commit -m"Bump version"
 git push
 ```
-- on Github
-- - merge PR
-- - create new release with tag matching new version string in root package.json
 
 ## react-bootstrap-table2
 
